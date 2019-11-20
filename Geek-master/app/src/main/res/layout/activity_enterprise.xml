@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    tools:context=".activity.EnterpriseActivity">
+
+
+    <ImageView
+        android:src="@mipmap/moban"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_margin="7dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/red"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/qb_px_150"
+            android:layout_height="@dimen/qb_px_34"
+            android:text="2.账号信息"
+            android:textSize="23sp"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_34"
+            android:text="设置昵称"
+            android:textColor="#ff333333"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/enterprise"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_34"
+            android:text="设置企业"
+            android:textColor="#ff333333"
+            android:textSize="14sp">
+        </EditText>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_34"
+            android:text="输入密码"
+            android:textColor="#ff333333"
+            android:textSize="14sp">
+        </EditText>
+
+        <EditText
+            android:id="@+id/confirmpassword"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_34"
+            android:text="确认密码"
+            android:textColor="#ff333333"
+            android:textSize="14sp">
+        </EditText>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btn_next"
+        android:layout_width="@dimen/qb_px_53"
+        android:layout_height="@dimen/qb_px_53"
+        android:layout_alignTop="@+id/forgetpassword"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="349dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="169dp"
+        android:paddingBottom="10dp"
+        android:src="@mipmap/next"
+        tools:ignore="NotSibling" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="26dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="@dimen/qb_px_100"
+            android:layout_height="@dimen/qb_px_23"
+            android:text="已经有账号？"
+            android:textSize="15sp" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/login"
+            android:layout_width="@dimen/qb_px_30"
+            android:layout_height="@dimen/qb_px_23"
+            android:text="登录"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+</RelativeLayout>

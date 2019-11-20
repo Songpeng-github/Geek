@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.StatusActivity">
+
+
+    <TextView
+       android:layout_margin="20dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="请选择你的身份"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ImageView
+        android:id="@+id/city"
+        android:src="@mipmap/city"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/qb_px_150"
+        android:layout_height="@dimen/qb_px_150" />
+
+    <TextView
+        android:gravity="center"
+        android:text="将以企业的身份参与竞拍,商家入驻是默认以企业身份认证"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/people"
+        android:src="@mipmap/people"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/qb_px_150"
+        android:layout_height="@dimen/qb_px_150" />
+    <TextView
+        android:gravity="center"
+        android:text="将以个人身份参与竞拍，个人入驻时默认以个人身份入驻"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
