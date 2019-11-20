@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".activity.SuccessActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@mipmap/success"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_150" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="恭喜你，注册成功!"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+
+
+          <ImageView
+           android:src="@mipmap/ji"
+           android:layout_width="@dimen/qb_px_150"
+           android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_margin="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="前往登录界面"
+            android:id="@+id/btn"
+            android:background="@drawable/flex_item_shape"
+            android:layout_width="@dimen/qb_px_150"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+</LinearLayout>

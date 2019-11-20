@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    tools:context=".activity.ForgetpasswordActivity">
+
+
+<ImageView
+    android:src="@mipmap/moban"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:layout_margin="7dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/red"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/qb_px_150"
+            android:layout_height="@dimen/qb_px_34"
+            android:text="1.验证手机号"
+            android:textSize="23sp"/>
+
+        <EditText
+            android:hint="请输入手机号"
+            android:id="@+id/number"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_34"
+            android:text="手机号"
+            android:textColor="#ff333333"
+            android:textSize="14sp" />
+        <EditText
+            android:id="@+id/password"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_34"
+            android:text="验证码"
+            android:textColor="#ff333333"
+            android:textSize="14sp">
+        </EditText>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/qb_px_20"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="3.0dip"
+            android:background="@drawable/flex_item_shape"
+            android:text="发送验证码" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btn_next"
+        android:layout_width="@dimen/qb_px_53"
+        android:layout_height="@dimen/qb_px_53"
+        android:layout_alignTop="@+id/forgetpassword"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="349dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="169dp"
+        android:paddingBottom="10dp"
+        android:src="@mipmap/next"
+        tools:ignore="NotSibling" />
+
+</RelativeLayout>
