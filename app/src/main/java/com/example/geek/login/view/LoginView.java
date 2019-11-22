@@ -1,6 +1,7 @@
 package com.example.geek.login.view;
 
 import com.example.geek.base.BaseView;
+import com.example.geek.login.bean.LoginBean;
 
 /**
  * name:&{宋佳羿}
@@ -10,7 +11,6 @@ import com.example.geek.base.BaseView;
 public interface LoginView extends BaseView {
 
 
-   String  name();
-   String  password();
+   void showLoginbean(LoginBean msg);
 
 }

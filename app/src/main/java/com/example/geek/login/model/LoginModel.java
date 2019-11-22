@@ -11,6 +11,7 @@ import com.example.geek.network.RxUtils;
 
 import io.reactivex.Observable;
 import io.reactivex.disposables.Disposable;
+import okhttp3.MediaType;
 import okhttp3.RequestBody;
 
 /**
@@ -21,23 +22,24 @@ import okhttp3.RequestBody;
 public class LoginModel  extends BaseModel {
     private static final String TAG = "LoginModel";
 
-    public void login(String name, String psd, final ResultCallBack callBack) {
+    public void login(String json,final ResultCallBack callBack) {
 
         ApiService apiserver = HttpUtils.getInstance().getApiserver(ApiService.sBaseUrl, ApiService.class);
+        RequestBody body = RequestBody.create(MediaType.parse("Content-Type:application/json"), json);
 
-        Observable<RequestBody> login1 = apiserver.login(name, psd);
+        Observable<LoginBean> login1 = apiserver.getlogin(body);
 
 
-        login1.compose(RxUtils.<RequestBody>rxObserableSchedulerHelper())//切换线程
+        login1.compose(RxUtils.<LoginBean>rxObserableSchedulerHelper())//切换线程
 
-                .subscribe(new BaseObserver<RequestBody>() {
+                .subscribe(new BaseObserver<LoginBean>() {
                     @Override
                     public void onSubscribe(Disposable d) {
                         compositeDisposable.add(d);
                     }
 
                     @Override
-                    public void onNext(RequestBody bean) {
+                    public void onNext(LoginBean bean) {
                         callBack.onSuccess(bean);
                     }
                 });

@@ -1,12 +1,8 @@
 package com.example.geek.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.media.Image;
-import android.os.Bundle;
 import android.widget.ImageView;
-
 import com.example.geek.R;
 import com.example.geek.base.BaseActivity;
 import com.example.geek.base.BaseView;

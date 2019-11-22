@@ -1,6 +1,7 @@
 package com.example.geek.login.view;
 
 import com.example.geek.base.BaseView;
+import com.example.geek.login.bean.ResetBean;
 
 /**
  * name:&{宋佳羿}
@@ -8,4 +9,5 @@ import com.example.geek.base.BaseView;
  * Time:15:20
  */
 public interface ResetView extends BaseView {
+    void showResetBean(ResetBean resetBean);
 }

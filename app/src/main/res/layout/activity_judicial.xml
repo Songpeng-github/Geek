@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/red"
+    tools:context=".activity.JudicialActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_50"
+        android:layout_marginLeft="@dimen/qb_px_15"
+        android:layout_marginRight="@dimen/qb_px_15">
+
+        <ImageView
+            android:id="@+id/path"
+            android:layout_width="@dimen/qb_px_10"
+            android:layout_height="@dimen/qb_px_17"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/path"/>
+        <TextView
+            android:text="司法拍卖"
+            android:layout_width="@dimen/qb_px_94"
+            android:layout_height="@dimen/qb_px_30"
+            android:textSize="@dimen/qb_px_20"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <androidx.appcompat.widget.SearchView
+        app:queryHint="搜索你想要的拍品"
+        android:id="@+id/serachview"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/yuan"
+        app:iconifiedByDefault="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_60">
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

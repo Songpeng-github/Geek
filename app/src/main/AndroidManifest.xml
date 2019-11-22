@@ -3,6 +3,7 @@
     package="com.example.geek">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".base.BaseApp"
@@ -12,8 +13,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.PaiActivity"></activity>
+        <activity android:name=".activity.TreasureActivity" />
+        <activity android:name=".activity.AssetsActivity" />
+        <activity android:name=".activity.CatActivity" />
+        <activity android:name=".activity.RealActivity" />
+        <activity android:name=".activity.HandActivity" />
+        <activity android:name=".activity.JudicialActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".activity.RegisteredActivity"></activity>
+        <activity android:name=".activity.RegisteredActivity" />
         <activity android:name=".activity.PersonalActivity" />
         <activity android:name=".activity.EnterpriseActivity" />
         <activity android:name=".activity.StatusActivity" />
