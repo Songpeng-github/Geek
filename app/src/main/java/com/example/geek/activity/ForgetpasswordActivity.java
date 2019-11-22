@@ -46,10 +46,12 @@ public class ForgetpasswordActivity extends BaseActivity<ForgetView, ForgetPeres
         return new ForgetPeresenter();
     }
 
+
     @Override
     protected int getLayoutId() {
         return R.layout.activity_forget;
     }
+
 
 
 
@@ -80,5 +82,7 @@ public class ForgetpasswordActivity extends BaseActivity<ForgetView, ForgetPeres
     public void showForget(ForgetBean forgetBean) {
         Log.d(TAG, "showForget: "+forgetBean.toString());
         forgetBean1 = new ForgetBean();
+
+
     }
     }

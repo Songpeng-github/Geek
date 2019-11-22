@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="@dimen/qb_px_150">
+<LinearLayout
+    android:gravity="center"
+    android:layout_margin="25dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_marginLeft="@dimen/qb_px_20"
+        android:src="@mipmap/wechat"
+        android:layout_width="@dimen/qb_px_44"
+        android:layout_height="@dimen/qb_px_44" />
+
+    <ImageView
+        android:layout_marginLeft="@dimen/qb_px_20"
+        android:src="@mipmap/wechatfriend"
+        android:layout_width="@dimen/qb_px_44"
+        android:layout_height="@dimen/qb_px_44" />
+    <ImageView
+        android:layout_marginLeft="@dimen/qb_px_20"
+        android:src="@mipmap/weibocolor"
+        android:layout_width="@dimen/qb_px_44"
+        android:layout_height="@dimen/qb_px_44" />
+    <ImageView
+        android:layout_marginLeft="@dimen/qb_px_20"
+        android:src="@mipmap/qqcolor"
+        android:layout_width="@dimen/qb_px_44"
+        android:layout_height="@dimen/qb_px_44" />
+    <ImageView
+        android:layout_marginLeft="@dimen/qb_px_20"
+        android:src="@mipmap/link"
+        android:layout_width="@dimen/qb_px_44"
+        android:layout_height="@dimen/qb_px_44" />
+
+</LinearLayout>
+
+    <TextView
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="取消"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

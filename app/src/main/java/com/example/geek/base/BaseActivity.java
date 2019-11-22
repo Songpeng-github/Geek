@@ -6,16 +6,11 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import butterknife.ButterKnife;
-
-
 /*
-
-
   MVP
   V:处理视图    用户交互
   M: 数据操作  如：网络请求 数据库
   P:业务处理   连接 V层与M层
-
  */
 
 public abstract class BaseActivity<V extends BaseView, P extends BasePeresenter> extends AppCompatActivity implements BaseView {

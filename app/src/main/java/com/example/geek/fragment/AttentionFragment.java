@@ -1,7 +1,6 @@
 package com.example.geek.fragment;
 
-import androidx.fragment.app.Fragment;
-
+import com.example.geek.R;
 import com.example.geek.base.BaseFragment;
 import com.example.geek.peresenter.AttentionPeresenter;
 import com.example.geek.view.AttentionView;
@@ -14,7 +13,7 @@ import com.example.geek.view.AttentionView;
 public class AttentionFragment extends BaseFragment<AttentionView, AttentionPeresenter>  implements AttentionView{
     @Override
     protected int getLayoutId() {
-        return 0;
+        return R.layout.fragment_attention;
     }
 
     @Override

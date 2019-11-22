@@ -2,6 +2,7 @@ package com.example.geek.fragment;
 
 import androidx.fragment.app.Fragment;
 
+import com.example.geek.R;
 import com.example.geek.base.BaseFragment;
 import com.example.geek.peresenter.FicationPeresenter;
 import com.example.geek.view.FicationView;
@@ -14,7 +15,7 @@ import com.example.geek.view.FicationView;
 public class FicationFragment extends BaseFragment<FicationView, FicationPeresenter> implements  FicationView {
     @Override
     protected int getLayoutId() {
-        return 0;
+        return R.layout.fragment_fication;
     }
 
     @Override

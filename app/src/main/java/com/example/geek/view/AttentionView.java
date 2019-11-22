@@ -8,4 +8,7 @@ import com.example.geek.base.BaseView;
  * Time:15:21
  */
 public interface AttentionView extends BaseView {
+
+
+
 }

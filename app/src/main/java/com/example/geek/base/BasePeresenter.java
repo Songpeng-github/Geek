@@ -14,13 +14,11 @@ public abstract class BasePeresenter<V extends BaseView> {
     }
 
 
-
     protected abstract void initModel();
 
     public void bind(V view) {
         this.view = view;
     }
-
 
     public void onDestory() {
         view = null;

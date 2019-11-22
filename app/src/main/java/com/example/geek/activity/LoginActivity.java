@@ -49,7 +49,6 @@ public class LoginActivity extends BaseActivity<LoginView, LoginPeresenter> impl
 
 
 
-
     @Override
     protected LoginPeresenter initPeresenter() {
         return new LoginPeresenter();

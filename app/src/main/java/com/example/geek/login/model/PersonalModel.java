@@ -8,4 +8,7 @@ import com.example.geek.base.BaseModel;
  * Time:15:18
  */
 public class PersonalModel extends BaseModel {
+
+
+
 }

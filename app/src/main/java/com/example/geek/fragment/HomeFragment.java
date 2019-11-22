@@ -2,6 +2,7 @@ package com.example.geek.fragment;
 
 import androidx.fragment.app.Fragment;
 
+import com.example.geek.R;
 import com.example.geek.base.BaseFragment;
 import com.example.geek.peresenter.HomePeresenter;
 import com.example.geek.view.HomeView;
@@ -14,7 +15,7 @@ import com.example.geek.view.HomeView;
 public class HomeFragment  extends BaseFragment<HomeView, HomePeresenter> implements HomeView {
     @Override
     protected int getLayoutId() {
-        return 0;
+        return R.layout.fragment_home;
     }
 
     @Override
