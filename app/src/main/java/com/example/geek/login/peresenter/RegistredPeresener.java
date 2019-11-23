@@ -48,7 +48,6 @@ public class RegistredPeresener extends BasePeresenter<RegistredView> implements
         models.add(registredModel);
     }
 
-
     @Override
     public void onSuccess(Object bean) {
         view.showRegister((RegisterBean) bean);

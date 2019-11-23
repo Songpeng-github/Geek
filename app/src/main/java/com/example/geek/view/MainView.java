@@ -2,6 +2,7 @@ package com.example.geek.view;
 
 import com.example.geek.base.BaseView;
 import com.example.geek.bean.BannerBean;
+import com.example.geek.bean.FirstBean;
 
 /**
  * name:&{宋佳羿}
@@ -10,4 +11,6 @@ import com.example.geek.bean.BannerBean;
  */
 public interface MainView extends BaseView {
     void showBanner(BannerBean bannerBean);
+
+    void  showFirst(FirstBean bean);
 }

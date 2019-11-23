@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import com.example.geek.R;
@@ -26,8 +27,8 @@ import butterknife.OnClick;
  */
 public class SuccessActivity extends BaseActivity<SuccssView, SuccessPeresenter> implements BaseView {
 
-  @BindView(R.id.btn_next)
-    ImageView  btn_next;
+  @BindView(R.id.sbtn)
+  Button sbtn;
 
     @Override
     protected SuccessPeresenter initPeresenter() {
@@ -39,7 +40,7 @@ public class SuccessActivity extends BaseActivity<SuccssView, SuccessPeresenter>
         return R.layout.activity_success;
     }
 
-    @OnClick(R.id.btn_next)
+    @OnClick(R.id.sbtn)
     public  void  Click(){
         startActivity(new Intent(SuccessActivity.this,LoginActivity.class));
     }

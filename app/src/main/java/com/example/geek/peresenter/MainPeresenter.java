@@ -4,6 +4,7 @@ import android.util.Log;
 
 import com.example.geek.base.BasePeresenter;
 import com.example.geek.bean.BannerBean;
+import com.example.geek.bean.FirstBean;
 import com.example.geek.model.MianModel;
 import com.example.geek.network.ResultCallBack;
 import com.example.geek.view.MainView;
@@ -25,10 +26,26 @@ public class MainPeresenter extends BasePeresenter<MainView> implements ResultCa
         mianModel.banner(json,this);
     }
 
+    public  void  First(String json){
+        mianModel.First(json, new ResultCallBack() {
+            @Override
+            public void onSuccess(Object bean) {
+                view.showFirst((FirstBean) bean);
+            }
+
+            @Override
+            public void onFail(String msg) {
+                Log.d(TAG, "onFirst: "+msg);
+            }
+        });
+    }
+
     @Override
     protected void initModel() {
         mianModel = new MianModel();
         models.add(mianModel);
+
+
     }
 
     @Override

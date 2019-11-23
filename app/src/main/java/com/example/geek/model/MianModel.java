@@ -2,6 +2,7 @@ package com.example.geek.model;
 
 import com.example.geek.base.BaseModel;
 import com.example.geek.bean.BannerBean;
+import com.example.geek.bean.FirstBean;
 import com.example.geek.network.ApiService;
 import com.example.geek.network.BaseObserver;
 import com.example.geek.network.HttpUtils;
@@ -38,7 +39,33 @@ public class MianModel extends BaseModel {
 
                     @Override
                     public void onNext(BannerBean bean) {
-                        Logger.logD(TAG,"===========ForgetBean==============="+bean.toString());
+                        Logger.logD(TAG,"===========MianModel==============="+bean.toString());
+                        callBack.onSuccess(bean);
+                    }
+                });
+
+    }
+
+
+
+
+    public void First(String json, final ResultCallBack callBack) {
+
+        ApiService apiserver = HttpUtils.getInstance().getApiserver(ApiService.sBaseUrl, ApiService.class);
+        RequestBody body = RequestBody.create(MediaType.parse("Content-Type:application/json"), json);
+
+        Observable<FirstBean> first = apiserver.getFirst(body);
+        first.compose(RxUtils.<FirstBean>rxObserableSchedulerHelper())//切换线程
+
+                .subscribe(new BaseObserver<FirstBean>() {
+                    @Override
+                    public void onSubscribe(Disposable d) {
+                        compositeDisposable.add(d);
+                    }
+
+                    @Override
+                    public void onNext(FirstBean bean) {
+                        Logger.logD(TAG,"===========FirstBean==============="+bean.toString());
                         callBack.onSuccess(bean);
                     }
                 });

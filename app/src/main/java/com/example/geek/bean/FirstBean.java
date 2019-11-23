@@ -67,6 +67,7 @@ public class FirstBean {
          * version : 0
          */
 
+
         private int accountId;
         private String code;
         private String createBy;

@@ -37,7 +37,7 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:text="前往登录界面"
-            android:id="@+id/btn"
+            android:id="@+id/sbtn"
             android:background="@drawable/flex_item_shape"
             android:layout_width="@dimen/qb_px_150"
             android:layout_height="wrap_content" />

@@ -124,7 +124,7 @@
         </LinearLayout>
 
         <ImageView
-            android:id="@+id/btn_next"
+            android:id="@+id/enext"
             android:layout_width="@dimen/qb_px_66"
             android:layout_height="@dimen/qb_px_66"
             android:layout_alignParentBottom="true"

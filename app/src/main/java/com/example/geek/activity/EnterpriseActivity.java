@@ -26,8 +26,8 @@ import butterknife.OnClick;
 
 public class EnterpriseActivity extends BaseActivity<RegistredView, RegistredPeresener> implements RegistredView {
 
-  @BindView(R.id.btn_next)
-    ImageView btn_next;
+  @BindView(R.id.enext)
+    ImageView enext;
   @BindView(R.id.name)
   EditText name;
   @BindView(R.id.enterprise)
@@ -49,7 +49,7 @@ public class EnterpriseActivity extends BaseActivity<RegistredView, RegistredPer
         return R.layout.activity_enterprise;
     }
 
-    @OnClick(R.id.btn_next)
+    @OnClick(R.id.enext)
     public  void  onClick(){
       // mPresenter.Registre(name.getText().toString(),enterprise.getText().toString(),password.getText().toString(),confirmpassword.getText().toString(),new Gson().toJson(new RegisterJson(name.getText().toString(),enterprise.getText().toString(),password.getText().toString(),confirmpassword.getText())));
         startActivity(new Intent(EnterpriseActivity.this,RegisteredActivity.class));

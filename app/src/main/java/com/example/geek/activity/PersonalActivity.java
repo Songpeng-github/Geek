@@ -23,8 +23,8 @@ import butterknife.OnClick;
 
 public class PersonalActivity extends BaseActivity<PersonalView, PersonalPeresenter> implements BaseView {
 
-@BindView(R.id.btn_next)
-    ImageView btn_text;
+@BindView(R.id.pnext)
+    ImageView next;
 
 
 
@@ -37,7 +37,7 @@ public class PersonalActivity extends BaseActivity<PersonalView, PersonalPeresen
     protected int getLayoutId() {
         return R.layout.activity_personal;
     }
-    @OnClick(R.id.btn_next)
+    @OnClick(R.id.pnext)
     public  void  Click(){
     startActivity(new Intent(PersonalActivity.this,RegisteredActivity.class));
     }

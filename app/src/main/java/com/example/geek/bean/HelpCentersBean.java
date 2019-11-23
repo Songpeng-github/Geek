@@ -4,14 +4,14 @@ import java.util.List;
 
 /**
  * name:&{宋佳羿}
- * date:2019/11/22
- * Time:14:14
+ * date:2019/11/23
+ * Time:9:30
  */
-public class BannerBean {
+public class HelpCentersBean {
 
     /**
      * code : 1
-     * data : [{"bannerUrl":"http://file.quepai.cn//banner1.jpg","createBy":"","createTime":null,"id":"45","isDeleted":"","sort":1,"updateBy":"","updateTime":null,"version":0},{"bannerUrl":"http://file.quepai.cn//banner01.jpg","createBy":"","createTime":null,"id":"46","isDeleted":"","sort":2,"updateBy":"","updateTime":null,"version":0},{"bannerUrl":"http://file.quepai.cn//banner3.jpg","createBy":"","createTime":null,"id":"47","isDeleted":"","sort":3,"updateBy":"","updateTime":null,"version":0},{"bannerUrl":"http://file.quepai.cn//banner4.jpg","createBy":"","createTime":null,"id":"48","isDeleted":"","sort":4,"updateBy":"","updateTime":null,"version":0}]
+     * data : [{"createBy":"","createTime":null,"id":"13","isDeleted":"","list":null,"sort":1,"updateBy":"","updateTime":null,"version":0,"workId":"77","workTitle":"如实描述"},{"createBy":"","createTime":null,"id":"14","isDeleted":"","list":null,"sort":2,"updateBy":"","updateTime":null,"version":0,"workId":"78","workTitle":"成交必卖"},{"createBy":"","createTime":null,"id":"9","isDeleted":"","list":null,"sort":3,"updateBy":"","updateTime":null,"version":0,"workId":"70","workTitle":"竞拍流程"},{"createBy":"","createTime":null,"id":"15","isDeleted":"","list":null,"sort":4,"updateBy":"","updateTime":null,"version":0,"workId":"79","workTitle":"拍前预展"},{"createBy":"","createTime":null,"id":"10","isDeleted":"","list":null,"sort":5,"updateBy":"","updateTime":null,"version":0,"workId":"71","workTitle":"拍卖规则"},{"createBy":"","createTime":null,"id":"16","isDeleted":"","list":null,"sort":6,"updateBy":"","updateTime":null,"version":0,"workId":"72","workTitle":"常见问题"}]
      * msg : success
      */
 
@@ -45,34 +45,30 @@ public class BannerBean {
 
     public static class DataBean {
         /**
-         * bannerUrl : http://file.quepai.cn//banner1.jpg
          * createBy :
          * createTime : null
-         * id : 45
+         * id : 13
          * isDeleted :
+         * list : null
          * sort : 1
          * updateBy :
          * updateTime : null
          * version : 0
+         * workId : 77
+         * workTitle : 如实描述
          */
 
-        private String bannerUrl;
         private String createBy;
         private Object createTime;
         private String id;
         private String isDeleted;
+        private Object list;
         private int sort;
         private String updateBy;
         private Object updateTime;
         private int version;
-
-        public String getBannerUrl() {
-            return bannerUrl;
-        }
-
-        public void setBannerUrl(String bannerUrl) {
-            this.bannerUrl = bannerUrl;
-        }
+        private String workId;
+        private String workTitle;
 
         public String getCreateBy() {
             return createBy;
@@ -106,6 +102,14 @@ public class BannerBean {
             this.isDeleted = isDeleted;
         }
 
+        public Object getList() {
+            return list;
+        }
+
+        public void setList(Object list) {
+            this.list = list;
+        }
+
         public int getSort() {
             return sort;
         }
@@ -137,14 +141,21 @@ public class BannerBean {
         public void setVersion(int version) {
             this.version = version;
         }
-    }
 
-    @Override
-    public String toString() {
-        return "BannerBean{" +
-                "code='" + code + '\'' +
-                ", msg='" + msg + '\'' +
-                ", data=" + data +
-                '}';
+        public String getWorkId() {
+            return workId;
+        }
+
+        public void setWorkId(String workId) {
+            this.workId = workId;
+        }
+
+        public String getWorkTitle() {
+            return workTitle;
+        }
+
+        public void setWorkTitle(String workTitle) {
+            this.workTitle = workTitle;
+        }
     }
 }

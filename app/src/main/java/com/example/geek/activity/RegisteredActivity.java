@@ -26,8 +26,8 @@ import butterknife.OnClick;
  */
 public class RegisteredActivity extends BaseActivity<RegistredView, RegistredPeresener> implements RegistredView {
 
-    @BindView(R.id.btn_next)
-    ImageView btn_next;
+    @BindView(R.id.renext)
+    ImageView renext;
    @BindView(R.id.check)
     CheckBox checkBox;
 
@@ -44,19 +44,17 @@ public class RegisteredActivity extends BaseActivity<RegistredView, RegistredPer
         return R.layout.activity_registered;
     }
 
-    @OnClick({R.id.btn_next,R.id.check})
+    @OnClick({R.id.renext,R.id.check})
     public  void  onClick(View view){
          switch (view.getId()){
-             case R.id.btn_next:
-                 startActivity(new Intent(RegisteredActivity.this,SuccessActivity.class));
-                 break;
-             case R.id.check:
+             case R.id.renext:
                  if (checkBox.isChecked()==true) {
-                     startActivity(new Intent(this,ResetOKActivity.class));
+                     startActivity(new Intent(RegisteredActivity.this,SuccessActivity.class));
                  }else {
                      ToastUtil.showLong("您未同意注册协议");
                  }
                  break;
+
 
          }
     }
